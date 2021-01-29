@@ -15,7 +15,8 @@ export SPOTIPY_REDIRECT_URI='http://127.0.0.1:9090'
 ```
 
 Run in command line: 
-```script.py playlist_uri mode reverse playlist_name
+```script.py playlist_uri mode reverse playlist_name```
+```
 #where
 #playlist_uri = string; uri of a playlist (can be found in share section of a playlist)
 #mode = integer; selects sorting method, where 0 sorts by energetic quality, 1 sorts by positive quality 
