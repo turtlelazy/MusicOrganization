@@ -8,6 +8,8 @@ In order to use this python script, you need to:
 
 Before cd'ing into the directory of the python script, run these commands in your terminal. If using a Windows terminal, use "SET" instead of "export"
 
+```
 export SPOTIPY_CLIENT_ID='YOURCLIENTIDHERE'
 export SPOTIPY_CLIENT_SECRET='YOURCLIENTSECRETHERE'
 export SPOTIPY_REDIRECT_URI='http://127.0.0.1:9090'
+```
