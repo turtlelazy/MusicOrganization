@@ -1,7 +1,6 @@
 from MoodCalculations import *
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
-from SpotCredentials import *
 
 scope = "user-library-read playlist-modify-public user-read-private playlist-read-private"
 
