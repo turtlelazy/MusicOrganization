@@ -34,3 +34,4 @@ def energyAlgoBasic(moodList):
 
 def happyAlgoBasic(moodList):
     return moodList[4]
+

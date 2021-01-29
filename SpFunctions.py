@@ -3,7 +3,7 @@ import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 from SpotCredentials import *
 
-scope = "user-library-read playlist-modify-public user-read-private"
+scope = "user-library-read playlist-modify-public user-read-private playlist-read-private"
 
 sp = spotipy.Spotify(auth_manager=SpotifyOAuth(scope=scope))
 user_id = sp.current_user()["id"]
@@ -14,7 +14,7 @@ def retrieveUserPlaylistsAsUri():
     playlists = sp.current_user_playlists()
     items = playlists["items"]
     for i in range(len(items)):
-        dict.append(items[i]["uri"])
+        dict.append([items[i]["name"],items[i]["uri"]])
     return dict
 
 
