@@ -10,7 +10,7 @@ playlist_name = "No Name"
 
 if(arguments == 4):
     playlist_uri = sys.argv[1]
-    mode = sys.argv[2]
+    mode = int(sys.argv[2])
     reverse = sys.argv[3].lower() == "true"
     playlist_name = sys.argv[4]
 
