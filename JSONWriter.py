@@ -1,9 +1,18 @@
 import json
-def JSONLoad(filename,encoding):
-    file = open(filename, encoding=encoding)
-    data = json.load(file)
-    file.close()
-    return data
 
 
-print(JSONLoad("TestFiles/Playlist1.json", "utf-8")["playlists"][0])
+def JSONWrite(filename, data):
+
+    with open(filename, 'w') as outfile:
+        json.dump(data, outfile, indent=4)
+
+def JSONRead(filename):
+    data = {}
+    try:
+        with open(filename) as json_file:
+            return json.load(json_file)
+    except FileNotFoundError:
+        JSONWrite(filename,data)
+        return data
+
+JSONRead("yum.json")
