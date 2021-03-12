@@ -84,7 +84,7 @@ def sortTrackMix(track,descending):
 tracks_list = createTracksList(playlist_uri)
 
 for track in tracks_list:
-    print(track.moodList[mode])
+    print(str(track.moodList[mode]) + "," +track.name)
     if track.moodList[mode] < threshold:
         tracks_list.remove(track)
 

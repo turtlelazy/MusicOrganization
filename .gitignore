@@ -128,3 +128,7 @@ dmypy.json
 # Pyre type checker
 .pyre/
 *SpotCredentials.py
+*Test.py
+*removedSongs.txt
+*client_secret_896189918973-0ph3vd8vrdm82cnl8ggrdu8mt7dd42s3.apps.googleusercontent.com.json
+TestFiles/
