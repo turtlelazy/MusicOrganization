@@ -132,3 +132,4 @@ dmypy.json
 *removedSongs.txt
 *client_secret_896189918973-0ph3vd8vrdm82cnl8ggrdu8mt7dd42s3.apps.googleusercontent.com.json
 TestFiles/
+*credentials.py
